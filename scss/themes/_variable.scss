@@ -1,16 +1,36 @@
-
-
 //---------------Background-------------
+$bg-c1-pink: #b61984;
+
+$bg-c1-light: #fff;
+$bg-c2-light: #dcd1f3;
+$bg-c1-dark: #000000;
+$bg-c2-dark: #030303;
+$bg-c3-light:#F8B653
+$bg-none: none;
 
 
 
 
 //-------------text------------------
-
+$text-c1-dark: #191919;
+$text-c2-dark: #000000;
+$text-c1-light: #fff;
+$text-c1-pink: #b61984;
+$text-c2-light: #F7F7F7;
 
 
 
 //text-size
+$text-xs: 10px;
+$text-1xs: 14px;
+$text-base: 16px;
+$text-xl: 18px;
+$text-2xl: 20px;
+$text-3xl: 30px;
+$text-4xl: 40px;
+$text-5xl: 50px;
+$text-6xl: 60px;
+$text-7xl: 70px;
 
 
 //text-font-weight
@@ -18,12 +38,16 @@ $text-light: 300;
 $text-regular: 400;
 $text-semibold: 600;
 $text-bold: 700;
-
+//boder
+$bd-c1-dark: 1px solid #000000;
+$border-radius: 20px;
+$border-radius2: 10px;
+$border-radius1: 50%;
 
 
 //-----------mixin--------------
 
-@mixin text($fs: $text-base, $fw, $c) {
+@mixin text($fs: $text-base, $fw: $text-regular, $c: $text-c1-dark) {
     font-size: $fs;
     font-weight: $fw;
     color: $c;
@@ -36,4 +60,36 @@ $text-bold: 700;
     padding: $pd;
     border: $bd;
     border-radius: $br;
+}
+
+@mixin hoverBefore ($bg, $w, $h, $l, $t) {
+    &::before {
+        content: "";
+        background: $bg;
+        border: 1px solid #000000;
+        position: absolute;
+        width: $w;
+        height: $h;
+        left: $l;
+        top: $t;
+        opacity: 0;
+    }
+
+    &:hover {
+        opacity: 1;
+        transition: all 0.2s;
+
+        &::before {
+            transition: all 0.5s;
+            opacity: 1;
+        }
+    }
+}
+
+@mixin position ($position, $width, $height, $left, $top) {
+    position: $position;
+    width: $width;
+    height: $height;
+    left: $left;
+    top: $top;
 }

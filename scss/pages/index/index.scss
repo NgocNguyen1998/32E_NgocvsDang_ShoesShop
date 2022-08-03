@@ -1,3 +1,143 @@
 @import '../../themes/variable';
 @import '../../base/components/component';
 
+
+//HEADER
+.header {
+    position: relative;
+    background-color: $bg-c1-dark;
+    height: 50px;
+    border: $bd-c1-dark;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            img {
+                position: absolute;
+                width: 116px;
+                height: 32px;
+                left: 24px;
+                top: 10px;
+            }
+        }
+
+        nav {
+            a {
+                text-decoration: none;
+                color: $text-c1-light;
+
+                img {
+                    width: 31px;
+                    height: 31px;
+                }
+            }
+
+            span {
+                color: $text-c1-light;
+                width: 35px;
+                height: 36px;
+                line-height: 36px;
+                @include text($text-3xl, $text-light, $text-c1-light);
+            }
+
+            a {
+                padding: 0 10px;
+                @include text($text-base, $text-light, $text-c2-light)
+            }
+        }
+    }
+}
+
+//MENU
+
+.menu {
+    height: 50px;
+    .container-fluid {
+        nav {
+            #navbarNavS {
+                .navbar-nav {
+                    .nav-item {
+                        .one {
+                            line-height: 24px;
+                            @include position(absolute, 56px, 24px, 25px, 16px);
+                            @include text($text-2xl, $text-regular, $text-c2-dark);
+                            @include hoverBefore($bg-c2-dark, 60px, 0px, 5px, 50px);
+                        }
+
+                        .two {
+                            opacity: 0.7;
+                            line-height: 24px;
+                            @include position(absolute, 41px, 24px, 105px, 16px);
+                            @include text($text-2xl, $text-light, $text-c1-dark);
+                            @include hoverBefore($bg-c2-dark, 60px, 0px, -2px, 50px);
+                        }
+
+                        .three {
+                            line-height: 24px;
+                            opacity: 0.7;
+                            @include position(absolute, 70px, 24px, 183px, 16px);
+                            @include text($text-2xl, $text-light, $text-c1-dark);
+                            @include hoverBefore($bg-c2-dark, 60px, 0px, 13px, 50px);
+                        }
+
+                        .four {
+                            line-height: 24px;
+                            @include position(absolute, 31px, 24px, 292px, 16px);
+                            @include text($text-2xl, $text-light, $text-c1-dark);
+                            @include hoverBefore($bg-c2-dark, 60px, 0px, -4px, 50px);
+                        }
+
+                        .five {
+                            line-height: 24px;
+                            @include position(absolute, 52px, 24px, 363px, 16px);
+                            @include text($text-2xl, $text-light, $text-c1-dark);
+                            @include hoverBefore($bg-c2-dark, 60px, 0px, 3px, 50px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//CAROUSEL
+.carousel{
+    background-image: url('../../../assets/img/image\ 6\ \(1\).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 85.5vh;
+    .container{
+        .carousel-content{
+           .item{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .item-left{
+                img{
+                    width: 100%;
+                }
+            }
+            .item-right{
+                h3{
+                    line-height: 48px;
+                    @include text($text-4xl, $text-light, $text-c2-dark); 
+                }
+                p{
+                    line-height: 24px;
+                    @include text($text-2xl, $text-light, $text-c2-dark);
+                }
+                button{}
+            }
+           } 
+        }
+    }
+}
+.slick-prev:before, .slick-next:before{
+    color: grey;
+    
+}
