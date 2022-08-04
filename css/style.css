@@ -214,7 +214,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
-  height: 85.5vh;
+  height: 495px;
 }
 .carousel .container .carousel-content .item {
   display: flex;
@@ -236,6 +236,111 @@
   font-weight: 300;
   color: #000000;
 }
-.slick-prev:before, .slick-next:before {
+.carousel .container .carousel-content .item .item-right button {
+  line-height: 24px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  background: #F8B653;
+  padding: 13px 35px;
+  border: none;
+}
+.carousel .container .carousel-content .item .item-right button:hover {
+  background: #dcd1f3;
+  color: #000000;
+}
+
+.slick-prev:before,
+.slick-next:before {
   color: grey;
+}
+
+.feature-product {
+  margin-top: 46px;
+}
+.feature-product .container {
+  position: relative;
+}
+.feature-product .container h3 {
+  margin-bottom: 40px;
+  line-height: 48px;
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  position: relative;
+  width: 351px;
+  height: 48px;
+  left: 476px;
+  top: 16px;
+}
+.feature-product .container .row .col-md-4 .card {
+  position: relative;
+  width: 334px;
+  height: 369px;
+  margin-top: 49px;
+}
+.feature-product .container .row .col-md-4 .card img {
+  position: absolute;
+  width: 220px;
+  height: 156px;
+  left: 57px;
+  top: 45px;
+}
+.feature-product .container .row .col-md-4 .card .card-body .card-title {
+  line-height: 29px;
+  position: absolute;
+  width: 185px;
+  height: 29px;
+  left: 23px;
+  top: 231px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+}
+.feature-product .container .row .col-md-4 .card .card-body .card-text {
+  line-height: 24px;
+  position: absolute;
+  width: 153px;
+  height: 24px;
+  left: 23px;
+  top: 268px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #CBC9C9;
+}
+.feature-product .container .row .col-md-4 .card .card-body .footer-card a {
+  background: #E1B067;
+  text-decoration: none;
+  padding: 17px 27px 18px 39px;
+  line-height: 29px;
+  position: absolute;
+  width: 175px;
+  height: 64px;
+  left: 0px;
+  top: 305px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #000000;
+}
+.feature-product .container .row .col-md-4 .card .card-body .footer-card p {
+  background: #DEDDDC;
+  padding: 17px 30px 18px 66px;
+  line-height: 29px;
+  position: absolute;
+  width: 160px;
+  height: 64px;
+  left: 174px;
+  top: 305px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+
+#footer {
+  margin-top: 104px;
+}
+#footer img {
+  width: 100%;
+  height: 242px;
 }

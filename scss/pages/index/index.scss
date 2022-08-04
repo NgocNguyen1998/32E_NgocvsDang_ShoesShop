@@ -8,12 +8,10 @@
     background-color: $bg-c1-dark;
     height: 50px;
     border: $bd-c1-dark;
-
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         .logo {
             img {
                 position: absolute;
@@ -55,6 +53,7 @@
 
 .menu {
     height: 50px;
+
     .container-fluid {
         nav {
             #navbarNavS {
@@ -105,39 +104,132 @@
 }
 
 //CAROUSEL
-.carousel{
+.carousel {
     background-image: url('../../../assets/img/image\ 6\ \(1\).png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom right;
-    height: 85.5vh;
-    .container{
-        .carousel-content{
-           .item{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            .item-left{
-                img{
-                    width: 100%;
+    height: 495px;
+
+    .container {
+        .carousel-content {
+            .item {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .item-left {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .item-right {
+                    h3 {
+                        line-height: 48px;
+                        @include text($text-4xl, $text-light, $text-c2-dark);
+                    }
+
+                    p {
+                        line-height: 24px;
+                        @include text($text-2xl, $text-light, $text-c2-dark);
+                    }
+
+                    button {
+                        line-height: 24px;
+                        @include button($text-2xl, $text-light, $text-c1-light, $bg-c3-light, $padding-button, none, $bg-c2-light, $text-c2-dark);
+
+                    }
                 }
             }
-            .item-right{
-                h3{
-                    line-height: 48px;
-                    @include text($text-4xl, $text-light, $text-c2-dark); 
-                }
-                p{
-                    line-height: 24px;
-                    @include text($text-2xl, $text-light, $text-c2-dark);
-                }
-                button{}
-            }
-           } 
         }
     }
 }
-.slick-prev:before, .slick-next:before{
+
+.slick-prev:before,
+.slick-next:before {
     color: grey;
-    
+
+}
+
+//PRODUCT
+.feature-product {
+    margin-top: 46px;
+
+    .container {
+        position: relative;
+
+        h3 {
+
+            margin-bottom: 40px;
+            line-height: 48px;
+            @include text($text-4xl, $text-regular, $text-c2-dark);
+            @include position (relative, 351px, 48px, 476px, 16px)
+        }
+
+        .row {
+            .col-md-4 {
+                .card {
+                    position: relative;
+                    width: 334px;
+                    height: 369px;
+                    margin-top: 49px;
+
+                    img {
+
+                        @include position(absolute, 220px, 156px, 57px, 45px);
+                    }
+
+                    .card-body {
+                        .card-title {
+                            line-height: 29px;
+                            @include position(absolute, 185px, 29px, 23px, 231px);
+                            @include text($text-2xl1, $text-light, $text-c2-dark);
+
+                        }
+
+                        .card-text {
+                            line-height: 24px;
+                            @include position(absolute, 153px, 24px, 23px, 268px);
+                            @include text($text-2xl, $text-light, $text-c3-light);
+
+
+                        }
+
+                        .footer-card {
+
+                            a {
+                                background: #E1B067;
+                                text-decoration: none;
+                                padding: 17px 27px 18px 39px;
+                                line-height: 29px;
+                                @include position(absolute, 175px, 64px, 0px, 305px);
+                                @include text($text-2xl1, $text-light, $text-c2-dark);
+
+
+                            }
+
+                            p {
+                                background: #DEDDDC;
+                                padding: 17px 30px 18px 66px;
+                                line-height: 29px;
+                                @include position(absolute, 160px, 64px, 174px, 305px);
+                                @include text($text-2xl1, $text-semibold, $text-c2-dark);
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+//FOOTER
+#footer{
+    margin-top: 104px;
+  img{
+    width: 100%;
+    height: 242px;
+  }
 }

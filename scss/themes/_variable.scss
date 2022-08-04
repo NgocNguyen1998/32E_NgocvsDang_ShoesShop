@@ -5,7 +5,7 @@ $bg-c1-light: #fff;
 $bg-c2-light: #dcd1f3;
 $bg-c1-dark: #000000;
 $bg-c2-dark: #030303;
-$bg-c3-light:#F8B653
+$bg-c3-light:#F8B653;
 $bg-none: none;
 
 
@@ -17,6 +17,7 @@ $text-c2-dark: #000000;
 $text-c1-light: #fff;
 $text-c1-pink: #b61984;
 $text-c2-light: #F7F7F7;
+$text-c3-light: #CBC9C9;
 
 
 
@@ -26,6 +27,7 @@ $text-1xs: 14px;
 $text-base: 16px;
 $text-xl: 18px;
 $text-2xl: 20px;
+$text-2xl1: 24px;
 $text-3xl: 30px;
 $text-4xl: 40px;
 $text-5xl: 50px;
@@ -43,7 +45,7 @@ $bd-c1-dark: 1px solid #000000;
 $border-radius: 20px;
 $border-radius2: 10px;
 $border-radius1: 50%;
-
+$padding-button: 13px 35px;
 
 //-----------mixin--------------
 
@@ -53,13 +55,16 @@ $border-radius1: 50%;
     color: $c;
 }
 
-@mixin button ($fs, $fw, $c, $bg, $pd, $bd, $br, $bg-hover, $c-hover) {
+@mixin button ($fs, $fw, $c, $bg, $pd, $bd, $bg-hover, $c-hover) {
     cursor: pointer;
     @include text($fs, $fw , $c );
     background: $bg;
     padding: $pd;
     border: $bd;
-    border-radius: $br;
+    &:hover {
+        background: $bg-hover;
+        color: $c-hover;
+    }
 }
 
 @mixin hoverBefore ($bg, $w, $h, $l, $t) {
