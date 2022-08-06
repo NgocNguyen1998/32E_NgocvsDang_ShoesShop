@@ -75,7 +75,7 @@
   <!-- REGISTER -->
   <section class="register">
     <div class="container">
-      <h2 class="text-center m-5">Register</h2>
+      <h2 class="text-center m-5" id="title">Register</h2>
       <form class="form-content">
         <div class="form-group">
           <label for="">Email</label>
@@ -112,13 +112,13 @@
           <span id="err_pass"></span>
         </div>
         <div class="form-group form-gender">
-          <form>
+          <form id="formGender">
             <label class="gender">Gender</label>
             <label class="radio-inline">
-              <input type="radio" id="test1" name="radio-group" checked />
+              <input type="radio" id="test1"   value="true" name="gender" checked/>
               <label class="label1" for="test1">Male</label>
 
-              <input type="radio" id="test2" name="radio-group" />
+              <input type="radio" id="test2"  name="gender" value="false" />
               <label class="label2" for="test2">Female</label>
             </label>
 

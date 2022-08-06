@@ -403,7 +403,7 @@
   top: 24px;
   color: #F50E0E;
 }
-.register .container .form-content .form-group .tbPassword {
+.register .container .form-content .form-group #tbPassword {
   top: 30px;
 }
 .register .container .form-content .form-group button {
