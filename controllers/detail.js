@@ -59,7 +59,7 @@ function renderProductRelated(value) {
                     <h5 class="card-title">${namePr}...</h5>
                     <p class="card-text">${des}...</p>
                     <div class="footer-card">
-                        <a href="./detail.html?product=${a[i].id}">
+                        <a href="./views/detail.html?product=${a[i].id}">
                           Buy now
                         </a>
                         <p>${a[i].price}$</p>
