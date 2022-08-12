@@ -13,7 +13,7 @@ function renderProduct(arrProduct) {
                 <h5 class="card-title">${namePr}</h5>
                 <p class="card-text">${des}</p>
                 <div class="footer-card">
-                    <a href="./detail.html?product=${product.id}">
+                    <a href="./views/detail.html?product=${product.id}">
                         
                             Buy now
                         
