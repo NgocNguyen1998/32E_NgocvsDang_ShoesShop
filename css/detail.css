@@ -1,0 +1,154 @@
+#product-detail .container1 {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#product-detail .container1 .rowline {
+  display: flex;
+  padding: 58px 881px 117px 65px;
+}
+#product-detail .container1 .rowline .col-left {
+  background: #F8F8F8;
+  height: 355px;
+  width: 334px;
+  margin-top: 58px;
+  margin-left: 65px;
+  padding: 109px 57px 90px 57px;
+}
+#product-detail .container1 .rowline .col-left img {
+  height: 156px;
+  width: 220px;
+}
+#product-detail .container1 .rowline #noiDung {
+  padding-top: 67px;
+  padding-left: 128px;
+}
+#product-detail .container1 .rowline #noiDung h1 {
+  height: 36px;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+#product-detail .container1 .rowline #noiDung p {
+  width: 503px;
+  left: 527px;
+  top: 112px;
+  border-radius: nullpx;
+  color: #140101;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+#product-detail .container1 .rowline #noiDung h3 {
+  height: 58px;
+  width: 162px;
+  left: 527px;
+  top: 202px;
+  color: #1ED90E;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#product-detail .container1 .rowline #noiDung #size {
+  padding-bottom: 17px;
+}
+#product-detail .container1 .rowline #noiDung #size button {
+  border: none;
+  background: #CCCCCC;
+  padding: 11px 8px 10px 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: nullpx;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1E1D1D;
+  margin-right: 18px;
+}
+#product-detail .container1 .rowline #noiDung h4 {
+  height: 47px;
+  width: 113px;
+  left: 527px;
+  top: 317px;
+  border-radius: nullpx;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FC0303;
+}
+#product-detail .container1 .rowline #noiDung .button-amount .button-plus {
+  height: 50px;
+  width: 50px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+  color: #FFFCFC;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  border: none;
+}
+#product-detail .container1 .rowline #noiDung .button-amount span {
+  padding-left: 20px;
+  padding-right: 25px;
+  height: 36px;
+  width: 14px;
+  left: 597px;
+  top: 377px;
+  border-radius: nullpx;
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+#product-detail .container1 .rowline #noiDung .button-amount .button-minus {
+  height: 50px;
+  width: 50px;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+  color: #FFFCFC;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  border: none;
+}
+#product-detail .container1 .rowline #noiDung .button-add {
+  padding-top: 7px;
+}
+#product-detail .container1 .rowline #noiDung .button-add button {
+  height: 64px;
+  width: 175px;
+  left: 527px;
+  top: 427px;
+  border-radius: 0px;
+  color: #FFF8F8;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  border-radius: nullpx;
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
+  border: none;
+}
