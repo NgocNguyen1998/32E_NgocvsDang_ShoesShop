@@ -6,8 +6,8 @@ document.querySelector("#btnSubmit").onclick = function () {
   member.phone = document.querySelector("#phone").value;
   var cfPassword = document.querySelector("#cfPassword").value;
 
-  const inputsGender = document.querySelectorAll(" #test1,#test2");
-  inputsGender.forEach((input) => {
+  let Gender = document.querySelectorAll(" #test1,#test2");
+  Gender.forEach((input) => {
     if (input.checked === true) {
       member.gender = input.value;
     }
